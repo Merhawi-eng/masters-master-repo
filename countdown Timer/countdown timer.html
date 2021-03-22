@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coutdown timer</title>   
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./timerStyle.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+</head>
+<body>
+  <div id="container">
+   
+    <div id="time">
+      <span class="hr">00</span>:
+      <span class="min">00</span>:
+      <span class="sec">00</span> 
+    </div>
+    <div id="button-container">
+      <button id="start">start</button>
+      <button id="reset">reset</button>
+    </div>
+    <audio>
+      <source src="./sound/Alarm-ringtone.mp3"></source>
+    
+    </audio> <br>
+    <p>Timer (<input id="hr-value" type="number" min="0" max="23" placeholder="00">:
+      <input id="min-value" type="number"  min="0" max="59" placeholder="00">:
+      <input id="sec-value" type="number"  min="0" max="59"  placeholder="00">)
+      <i class="small material-icons">edit</i>Edit
+     </p>
+    
+  </div >
+  <script src="./timerJS.js"></script>
+       
+</body>
+</html>
